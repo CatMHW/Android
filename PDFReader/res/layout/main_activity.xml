@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg1"
+    tools:context=".MainActivity">
+
+    <com.radaee.main.MyImageView
+        android:id="@+id/light"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"  
+        android:scaleType="matrix"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/light1"/>    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:layout_gravity="center"
+    	 android:layout_centerInParent="true"
+    	 android:gravity="center"
+    	 android:orientation="vertical">
+		     <Button 
+		        android:id="@+id/browseBtn"
+		        android:background="@drawable/main_btn"
+		        android:layout_width="260dp"
+		        android:layout_height="45dp"		     
+		        android:layout_gravity="center"
+		        android:layout_marginTop="20dp"
+		        android:text="浏  览  文  件"
+		        android:textColor="@color/white"
+		        android:textSize="20dp"/> 
+<!--		        <TextView 
+		            android:id="@+id/blankView"
+		            android:layout_height="15dp"
+		            android:layout_width="wrap_content"/>    -->
+		     <Button 
+		        android:id="@+id/scanBtn"
+		        android:background="@drawable/main_btn"
+		        android:layout_width="260dp"
+		        android:layout_height="45dp"
+		        android:layout_marginTop="20dp"
+		        android:text="制   作   PDF"
+		        android:layout_below="@id/browseBtn"
+		        android:textColor="@color/white"
+		        android:textSize="20dp"/>
+		<!-- <TextView
+		   android:gravity="center"
+			    android:id="@+id/testTv"
+			    android:text="往下拉"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/scanBtn"
+			    android:clickable="true"/> -->   
+    </LinearLayout>
+
+	    	
+	<com.radaee.main.MultiDirectionSlidingDrawer
+		xmlns:my="http://schemas.android.com/apk/res/com.radaee.reader"
+		android:id="@+id/slidingDrawer"
+		my:direction="topToBottom"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" 
+
+		my:handle="@+id/handle"
+		my:content="@+id/content">
+	    <ImageView
+	        android:id="@+id/handle"
+	        android:src="@drawable/handle"
+	        android:layout_width="70px"
+	    	android:layout_height="70px"/>   
+	    
+		     <RelativeLayout
+			     android:id="@+id/content"
+			     android:layout_width="wrap_content"
+			     android:layout_height="55px"
+			     android:layout_alignParentBottom="true"
+			     android:layout_alignParentLeft="true"
+			     android:background="@drawable/test"
+			     android:gravity="center">
+				 
+		 		
+		     <TextView
+		         android:id="@+id/accountTextView"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_marginTop="5dp"
+		         android:text="" 
+		         android:textColor="@color/black"
+		         android:textSize="25px"/>
+	
+		     <EditText
+		         android:id="@+id/mailEditText1"
+		         android:layout_toRightOf="@id/accountTextView"
+		         android:layout_width="280dp"
+		         android:layout_height="36dp" 
+		         android:hint="  Username"
+		         android:ellipsize="start"
+		         android:drawableLeft="@drawable/m_user"
+		         android:background="@drawable/mail_shape_edittext">
+	
+		         <requestFocus />
+		     </EditText>
+	
+		   <!--   <ImageView
+		         android:id="@+id/mailTextView"
+		         android:layout_width="30px"
+		         android:layout_height="30px"
+		         android:layout_toRightOf="@id/mailEditText1"
+		         android:src="@drawable/mail" />
+	
+		     <EditText
+		         android:id="@+id/mailEditText2"
+		         android:layout_width="100dp"
+		         android:layout_height="wrap_content"
+		         android:layout_toRightOf="@id/mailTextView" />
+ -->			
+		     <TextView
+		         android:id="@+id/pwTextView"
+		         android:layout_width="wrap_content"
+		         android:layout_height="55px"
+		         android:layout_below="@id/mailEditText1"
+		         android:layout_marginTop="15dp"
+		         android:text="" 
+		         android:textColor="@color/black"
+		         android:textSize="25px"/>	
+		         
+		     <EditText
+		         android:id="@+id/mailPassWordEdit"
+		         android:hint=" ********"
+		         android:layout_width="280dp"
+		         android:layout_height="36dp"
+		         android:layout_marginTop="10dp"
+		         android:layout_below="@id/mailEditText1"
+		         android:layout_toRightOf="@id/pwTextView" 
+		         android:inputType="textPassword"
+		         android:drawableLeft="@drawable/m_password"
+		         android:background="@drawable/mail_shape_edittext"/>
+		     
+		     <Button 
+		         android:id="@+id/maillogon"
+		        android:background="@drawable/main_btn"
+		        android:layout_width="280dp"
+		        android:layout_height="45dp"
+		        android:layout_marginTop="10dp"
+		         android:text="登         录"   
+		         android:layout_below="@id/mailPassWordEdit"
+		        android:textColor="@color/white"
+		        android:textSize="20dp"/>
+		 </RelativeLayout>	   
+     </com.radaee.main.MultiDirectionSlidingDrawer>
+     
+	 <ImageView 
+	     android:id="@+id/main_setting"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_marginBottom="-1dp"
+	     android:background="@drawable/handle1"
+	     android:scaleType="fitXY"
+	     android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+<!--<com.example.softwarecup.ScrollLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ScrollLayoutTest"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <RelativeLayout 
+        android:gravity="center"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+		<Button 
+       		android:id="@+id/browseBtn"
+      	  	android:layout_width="150px"
+       	 	android:layout_height="wrap_content"
+       	 	android:text="浏览"/>
+     	<Button 
+        	android:id="@+id/scanBtn"
+        	android:layout_width="150px"
+        	android:layout_height="wrap_content"
+        	android:text="扫描"
+        	android:layout_below="@id/browseBtn"/>
+     	<TextView
+	    	android:id="@+id/testTv"
+	    	android:text="往下拉"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/scanBtn"
+	    	android:clickable="true"/>
+     </RelativeLayout>
+	 
+</com.example.softwarecup.ScrollLayout> -->

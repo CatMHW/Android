@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_striped_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"   
+        android:orientation="horizontal"     
+        android:background="@drawable/app_list_corner_shape1">
+        
+        <ImageView 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:background="@drawable/line"/>
+        
+        <TextView            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="5dip" 
+        android:layout_marginLeft="15dp"
+       	android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/ringagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/clock_list"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+       		android:layout_marginRight="0dp"
+            android:padding="10dip"
+            android:text="短信提醒"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <com.reader.setting.SlipButton
+            android:id="@+id/splitbutton"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_alignRight="@id/ringagain"
+            android:layout_alignTop="@id/ringagain"
+            android:layout_marginTop="10dip" />
+
+
+	</RelativeLayout>
+</LinearLayout>

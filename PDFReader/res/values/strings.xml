@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="s_ink">水印</string>
+    <string name="s_rect">矩形框</string>
+    <string name="s_remove">移除</string>
+    <string name="s_save">保存</string>
+    <string name="s_end">结束</string>
+    <string name="s_prev">&lt;</string>
+    <string name="s_next">&gt;</string>
+    <string name="s_find">the</string>
+    <string name="s_act">Do</string>
+    <string name="s_saveas">Save as</string>
+    <color name="clr_back">#FFCCCC80</color>
+    <string name="s_edit">Edit</string>
+
+     <string name="no_media_warning">Storage Media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible</string>
+    <string name="open_failed">Unable to open document</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title">MuPDF</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching...</string>
+    <string name="link_control">Link highlighting and enabling</string>
+    
+    <string name="hello">Hello World, ActTabActivityDemo1!</string>
+    <string name="app_name">MAX Reader</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="search_button">点击刷新</string>
+    <string name="aboutauthor">关于作者</string>
+    <string name="aboutprogram">关于文件</string>
+    <string name="gotit">我知道了</string>
+    <string name="author">作者：</string>
+	<string name="paragrap">段落个数：</string>
+	<string name="word">文字个数：</string>
+	<string name="tables">表格个数：</string>
+	<string name="pictures">图片个数：</string>
+</resources>

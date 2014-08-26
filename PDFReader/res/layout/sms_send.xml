@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+ >
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"  
+        android:id="@+id/rLayout" 
+        android:orientation="horizontal"  
+        android:gravity="center"   
+        android:background="@drawable/skinpic_yellow" >
+        <TextView            
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:text="发 送 提 醒 短 信"
+		            android:textSize="18sp"
+		            android:layout_marginTop="1dp"
+		            android:textColor="@color/white" />
+        </LinearLayout>
+ 	
+	<TableLayout 
+    android:id="@+id/Tablelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip">
+    
+
+	    
+	    <EditText 
+            android:id="@+id/no"
+             android:layout_marginTop="30dp"
+	        android:layout_width="match_parent"
+		    android:layout_height="36dp" 
+		    android:hint="  收件人"
+		    android:ellipsize="start"
+		    android:drawableLeft="@drawable/m_sendto"
+	        android:background="@drawable/mail_shape_edittext"/>
+
+
+
+        <EditText
+            android:id="@+id/sms"
+            android:layout_marginTop="10dp"
+	    android:lines = "3" 
+	    android:hint="短信内容"
+	    android:background="@drawable/mail_shape_edittext" />
+
+	     
+
+
+	<Button
+	    android:id="@+id/send"
+	    android:layout_width="250dp" 
+		android:layout_height="45dp"
+		android:layout_marginTop="10dp"
+
+		android:layout_gravity="center_horizontal"
+	    android:text="发  送  短  信"
+		android:textColor="@color/white"
+		android:textSize="30px"
+	    android:background="@drawable/main_btn"
+	    />
+
+
+
+
+	</TableLayout>
+	
+
+</LinearLayout>

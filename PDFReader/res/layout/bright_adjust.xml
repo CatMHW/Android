@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" >    
+    
+    <ImageView 
+        android:id="@+id/brightAdjustImg"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+    
+    <SeekBar 
+        android:id="@+id/seekBar"
+        android:max="255"
+        android:progress="30"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"/>
+    
+  <!--    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/yesBtn" 
+            android:layout_width="w"
+    		android:layout_height="wrap_content"
+    		android:text="确定"/>
+        <Button
+            android:id="@+id/cancelBtn" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="取消"/>
+    </LinearLayout>-->"
+
+</LinearLayout>

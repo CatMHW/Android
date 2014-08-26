@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cloud_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiduCloud" 
+    android:orientation="vertical"
+    android:background="@drawable/list_bg">
+
+
+	    <Button 
+        android:id="@+id/login"
+        android:layout_width="260dp"
+		android:layout_height="45dp"		     
+		android:layout_gravity="center_horizontal"
+		android:text="登    录    网     盘"
+		android:textSize="20sp"
+		android:background="@drawable/main_btn"
+		android:textColor="@color/white"
+		/>
+	
+
+	<ListView 
+	    android:id="@+id/cloudLv"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@drawable/liner"  
+	    android:dividerHeight="1dip"  
+	    android:background="@drawable/list_bg"
+	    android:cacheColorHint="#00000000"></ListView>"
+
+</LinearLayout>

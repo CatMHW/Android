@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="wrap_content" 
+	android:paddingBottom="3dip" 
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip">
+	<ImageView 
+	    android:id="@+id/Hispic"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+	<TextView 
+    	android:id="@+id/HisTitle"
+    	android:text="TextView01" 
+    	android:layout_height="wrap_content" 
+    	android:textSize="20dip" 
+    	android:layout_toRightOf="@+id/Hispic"
+	    android:layout_width="fill_parent" 
+	    android:textColor="#f9f9f9"/>
+	<TextView 
+        android:id="@+id/HisTime"
+		android:text="TextView02" 
+		android:textSize="13dip"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+       	android:layout_toRightOf="@+id/Hispic"
+		android:layout_below="@+id/HisTitle" 
+		android:textColor="#f9f9f9"/>
+</RelativeLayout>

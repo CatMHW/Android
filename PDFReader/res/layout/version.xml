@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"   
+        android:orientation="horizontal"     
+        android:background="@drawable/app_list_corner_shape1">
+        
+        <ImageView 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:background="@drawable/line"/>
+        
+        <TextView            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/version_icon"
+        android:layout_gravity="center"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="MAX Reader"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" "
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/gray"/>
+    
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+		        android:id="@+id/linearLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"  
+		        android:layout_alignParentBottom="true" 
+		        android:layout_marginBottom="2dp"
+		        android:orientation="vertical" >
+		        
+		        <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="UIT-MAX  版权所有"
+			        android:textSize="11sp"
+			        android:layout_gravity="center"
+			        android:textColor="@color/gray"/>
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2dp"
+			        android:text="Copyright © 2012 - 2013 UIT-MAX"
+			        android:layout_gravity="center"
+			        android:textSize="11sp"
+			        android:textColor="@color/gray"/>
+			     <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2dp"
+			        android:text="All Rights Reserved"
+			        android:layout_gravity="center"
+			        android:textSize="11sp"
+			        android:textColor="@color/gray"/>
+	        </LinearLayout>
+	        
+    </RelativeLayout>
+     
+
+</LinearLayout>

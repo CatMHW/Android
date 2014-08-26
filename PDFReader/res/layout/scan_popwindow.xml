@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登陆界面 -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop">
+    
+	<Button
+	    android:id="@+id/takePhotoBtn"
+	    android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="相机拍照"/>
+	<Button
+	    android:id="@+id/scanPhotoBtn"
+	    android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="浏览相册"/>
+    	"
+</LinearLayout>

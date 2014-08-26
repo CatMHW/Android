@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+ >
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"  
+        android:id="@+id/rLayout" 
+        android:gravity="center" 
+        android:orientation="horizontal"     
+        android:background="@drawable/skinpic_yellow" >
+        <TextView            
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="发 送 邮 件"
+		            android:textSize="18sp"
+		            android:layout_marginTop="1dp"
+		            android:textColor="@color/white" />
+        </LinearLayout>
+ 	
+	<TableLayout 
+    android:id="@+id/Tablelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip">
+    
+
+	    
+	    <EditText 
+	        android:id="@+id/receiver_address"
+	        android:layout_marginTop="30dp"
+	        android:layout_width="match_parent"
+		    android:layout_height="36dp" 
+		    android:hint="  收件人"
+		    android:ellipsize="start"
+		    android:drawableLeft="@drawable/m_sendto"
+	        android:background="@drawable/mail_shape_edittext"
+	        />
+
+	
+
+	    <EditText 
+	        android:id ="@+id/mailtitle"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="match_parent"
+		    android:layout_height="36dp" 
+		    android:hint="  主题"
+		    android:ellipsize="start"
+		    android:drawableLeft="@drawable/m_title"
+	        android:background="@drawable/mail_shape_edittext"
+
+	        />
+	
+	<EditText
+	    android:id="@+id/textcontent"
+	    android:layout_marginTop="10dp"
+	    android:lines = "3" 
+	    android:background="@drawable/mail_shape_edittext"/>
+	
+
+<TableRow>
+	     <TextView 
+	       	android:layout_column = "0"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:text="附件："
+	    />
+	     <TextView
+	        android:layout_column = "1"
+	     	android:id="@+id/attachment"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    />
+	       <ImageButton 
+	        android:id="@+id/attachment_add"
+	        android:layout_width="wrap_content"
+	        android:src="@drawable/ic_launcher"
+	        />
+	     </TableRow>
+	     
+
+
+	<Button
+	    android:id="@+id/sendmail"
+	    android:layout_width="250dp" 
+		android:layout_height="45dp"
+		android:layout_marginTop="10dp"
+
+		android:layout_gravity="center_horizontal"
+	    android:text="发      送"
+		android:textColor="@color/white"
+		android:textSize="30px"
+	    android:background="@drawable/main_btn"
+	    />
+
+
+
+
+	</TableLayout>
+
+</LinearLayout>

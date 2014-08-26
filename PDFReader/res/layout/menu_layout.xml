@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom">    
+    
+    <!-- 屏幕亮度调节 -->
+    <LinearLayout 
+        android:id="@+id/brightLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:background="@drawable/menu_bg">
+        <ImageView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/screen_adjust"
+    		android:paddingTop="5dp"/>
+        <TextView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="亮度调节"
+    		android:paddingTop="12px"
+    		android:textColor="#FFFFFFFF"
+    		android:gravity="center"/> 
+    </LinearLayout>
+    
+    <!-- 屏幕超时调节 -->
+    <LinearLayout 
+        android:id="@+id/sleepLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:background="@drawable/menu_bg">
+        <ImageView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/sleep"
+    		android:paddingTop="5dp"/>
+        <TextView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="屏幕超时"
+    		android:textColor="#FFFFFFFF"
+    		android:paddingTop="12px"
+    		android:gravity="center"/> 
+    </LinearLayout>
+    
+    <!-- 设置 -->
+     <LinearLayout 
+        android:id="@+id/settingLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:background="@drawable/menu_bg">
+        <ImageView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/setting"
+    		android:paddingTop="8dp"/>
+        <TextView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="设置"
+    		android:textColor="#FFFFFFFF"
+    		android:paddingTop="12px"
+    		android:gravity="center"/> 
+    </LinearLayout>
+    
+
+</LinearLayout>
