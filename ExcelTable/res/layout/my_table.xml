@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyTable" >
+
+    <TextView 
+        android:id="@+id/blank_tv"
+        android:layout_width="35dp"
+        android:layout_height="35px"
+        android:background="@drawable/top02"/>
+    
+    
+   <com.example.mytable.CustomHScrollView  
+        android:id="@+id/row_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_toRightOf="@id/blank_tv"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TableLayout
+		        android:id="@+id/row_head_tab"
+				android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:stretchColumns="*">
+		    </TableLayout>
+        </LinearLayout>
+    </com.example.mytable.CustomHScrollView >
+     
+    
+    <com.example.mytable.CustomScrollView 
+        android:id="@+id/line_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blank_tv"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+        		android:id="@+id/line_head_tab"
+		        android:layout_width="35dp"
+		        android:layout_height="match_parent"
+		        android:stretchColumns="*">
+    		</TableLayout>
+        </LinearLayout>
+    </com.example.mytable.CustomScrollView>
+    
+
+  <!--  <HorizontalScrollView 
+         android:id="@+id/view_scroll"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/row_scroll"
+         android:layout_toRightOf="@id/line_scroll"
+         android:background="#FF00F0">
+         <ScrollView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content" >
+		         <TableLayout
+			        android:id="@+id/tablelayout"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:stretchColumns="*" 
+			        android:orientation="vertical">
+			     </TableLayout>
+        	</LinearLayout>
+         </ScrollView>
+     </HorizontalScrollView>  -->
+     
+     <com.example.mytable.CustomHScrollView 
+         android:id="@+id/view_h_scroll"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/row_scroll"
+         android:layout_toRightOf="@id/line_scroll"
+         android:background="@color/white"
+         android:scrollbars="none"
+         android:overScrollMode="always">
+         <com.example.mytable.CustomScrollView 
+             android:id="@+id/view_v_scroll" 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:scrollbars="none">
+             <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content" >
+		         <TableLayout
+			        android:id="@+id/tablelayout"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:stretchColumns="*" 
+			        android:orientation="vertical">
+			     </TableLayout>
+        	</LinearLayout>
+         </com.example.mytable.CustomScrollView >
+     </com.example.mytable.CustomHScrollView>
+     
+</RelativeLayout>
